@@ -1,0 +1,705 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+/* #myBtn {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  z-index: 99;
+  height: 50px;
+  border-radius: 50%;
+  background: #2d64e6;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: rgb(36, 167, 169);
+}
+#myBtn:active {
+  background: #111;
+  color: #fff;
+} */
+.btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  border-radius: 50%;
+  background: #7300ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btnScrollToTop:active {
+  background: #111;
+  color: #fff;
+}
+.btnScrollToTop:hover {
+  color: #111;
+  background: #fff;
+  transition: all ease-in 0.4s;
+}
+.header nav {
+  background-image: url("/photo/photo-1607853202273-797f1c22a38e.jfif");
+  background-position: center;
+  background-size: cover;
+  padding: 5px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  transition: all 300ms ease-in-out;
+}
+/* .header .logo-bad {
+  display: flex;
+  font-size: 24px;
+  float: left;
+  justify-content: center;
+}  */
+/* 
+.header nav {
+  background: #222;
+  padding: 5px 30px;
+} */
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease-in;
+}
+a:hover {
+  color: rgb(8, 37, 72);
+  transition: all 0.4s ease-in;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+.logo a,
+.toggle a {
+  font-size: 20px;
+}
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor: pointer;
+}
+.bars {
+  background: rgb(0, 0, 0);
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+.bars:before,
+.bars:after {
+  background: rgb(0, 0, 0);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+  top: -5px;
+}
+.scroll-down .header {
+  transform: translate3d(0, -100%, 0);
+}
+.scroll-up .header {
+  border-bottom: 5px solid black;
+}
+.ps5 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 4em;
+  background: url("/photo/photo044.jfif");
+  background-position: center;
+  background-size: cover;
+}
+.ps5 .green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(72, 155, 228, 0.279);
+}
+.ps5 .ps-text {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: rgb(248, 248, 248);
+  text-align: center;
+  width: 40%;
+  padding: 8%;
+  background-color: rgba(0, 0, 0, 0.204);
+  border-radius: 7em 1px;
+  float: right;
+}
+.ps-text h2 {
+  font-size: 2em;
+  font-weight: 100;
+}
+.ps-text p {
+  font-size: 1.1em;
+}
+.ps-bottom {
+  position: relative;
+  text-align: center;
+  padding: 4em;
+}
+.ps-video h2 {
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 2.2em;
+  font-weight: 100;
+}
+.video-5 {
+  box-shadow: 0px 0px 5px 5px rgb(123, 123, 123);
+}
+.hr-bottom {
+  border: 1px solid;
+  margin-top: 3.5em;
+  margin-bottom: -50px;
+  width: 66%;
+  box-shadow: 3px 0px 2px 0px rgb(104, 159, 226);
+}
+.ps-bottom .ps-hub {
+  position: relative;
+  padding: 4em;
+}
+.ps-hub .hub-text {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  color: rgb(49, 49, 49);
+}
+.hub-text h2 {
+  font-size: 2.5em;
+  font-weight: 100;
+}
+.hub-text p {
+  font-size: 1.2em;
+  color: rgb(148, 147, 147);
+}
+.ps-control {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.ps-control .control-system {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: url("/photo/photo-21.jfif");
+  background-position: center;
+  background-size: cover;
+  padding: 4em;
+}
+.con-text {
+  width: 40%;
+  color: #fff;
+  padding-right: 20px;
+}
+.con-text h2 {
+  font-size: 2em;
+  font-weight: 100;
+}
+.con-img p {
+  font-size: 0.89em;
+}
+.ps-car {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-left: 13%;
+  padding: 4em;
+}
+.car-img {
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+}
+.car-paly,
+.all {
+  position: relative;
+  font-size: 14px;
+  color: gray;
+}
+
+.car-bottom {
+  position: relative;
+  display: flex;
+}
+.more {
+  position: relative;
+  margin-top: 15em;
+  margin-left: 2em;
+}
+.car-find {
+  position: relative;
+  margin-top: 25em;
+  width: 40%;
+  padding-left: 30px;
+  color: rgb(47, 74, 111);
+}
+.car-find h2 {
+  position: relative;
+  font-size: 2em;
+  font-weight: 100;
+}
+.ps-control .challeng {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.challeng {
+  position: relative;
+  display: flex;
+  background: url("/photo/photo-1621.jfif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4em;
+}
+.challeng-text {
+  width: 50%;
+  color: #fff;
+  padding-left: 10px;
+}
+.challeng-text h2 {
+  font-size: 2em;
+  font-weight: 100;
+}
+.ps-control .cross {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.cross {
+  position: relative;
+  padding: 3em;
+  display: flex;
+}
+.cross-text {
+  position: relative;
+  width: 40%;
+  padding: 20px;
+}
+.cross-text h2 {
+  font-size: 2em;
+  font-weight: 100;
+}
+.ps-control .multi {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.multi {
+  position: relative;
+  display: flex;
+  background: url("/photo/ps-indies-heavenly.jfif");
+  background-position: center;
+  background-size: cover;
+  padding: 4em;
+}
+.multi-text {
+  position: relative;
+  width: 50%;
+  color: #fff;
+  padding: 5em;
+  margin-right: 30%;
+}
+.multi-text h2 {
+  font-size: 2em;
+  font-weight: 100;
+}
+.ps-control .game-grid {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-right: 19%;
+  padding-top: 20px;
+}
+.game-grid .game-return {
+  position: relative;
+  margin: 30px;
+}
+.game-grid,
+.game-return .game-sack {
+  position: relative;
+  margin: 10px;
+  display: flex;
+  margin-left: 20%;
+}
+.game-sack {
+  position: relative;
+  margin-top: -45px;
+}
+.game-grid,
+.ret-text .sack-text {
+  width: 60%;
+}
+.ret-text .sack-text,
+h2 {
+  font-weight: 100;
+  font-size: 2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.ret-text .sack-text,
+p {
+  font-size: 1.2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.ps-control .remote {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(123, 193, 243, 0.646);
+  padding: 3em;
+}
+.remote .rem-text {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+  color: #fff;
+}
+.rem-text h2 {
+  position: relative;
+  font-size: 3em;
+  font-weight: 100;
+}
+.con {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 19px;
+  background: #2d64e6;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  margin: 20px 0px 20px 0px;
+}
+.ps-control .external {
+  position: relative;
+  padding: 4em;
+  display: flex;
+  margin-left: 50px;
+}
+.drive {
+  margin-top: 3em;
+}
+.exter-text {
+  margin: 20px;
+  width: 35%;
+}
+.ps-control .footer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(18, 12, 37);
+  color: #fff;
+  z-index: 2;
+}
+.footer .footer-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-sony {
+  position: relative;
+  width: 160px;
+  height: 70px;
+  background: url("/photo/sie.svg");
+  background-repeat: no-repeat;
+  background-size: 160px;
+  background-position: center;
+  cursor: pointer;
+}
+.footer-text h2 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+.footer-text p {
+  font-size: 1.2em;
+  line-height: 2em;
+  max-width: 700px;
+}
+.footer-social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.449);
+}
+.footer-social li {
+  list-style: none;
+}
+.footer-social li a {
+  display: inline-block;
+  filter: invert(1);
+  margin-right: 20px;
+  font-size: 1.3em;
+  transition: all ease 0.4s;
+}
+.footer-social li a:hover {
+  color: #7300ff;
+}
+@media all and (min-width: 468px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    order: 2;
+  }
+  .button.secondary {
+    border: 0;
+  }
+  .button a {
+    padding: 7.5px 15px;
+    background: teal;
+    border: none;
+    border-radius: 50em;
+    transition: all 0.4s ease-in;
+  }
+  .button.secondary a {
+    background: transparent;
+    background-color: #7300ff;
+    border: none;
+  }
+  .button a:hover {
+    text-decoration: none;
+    color: #111;
+    transition: all 0.4s ease-in;
+    background: transparent;
+  }
+  /* .button:not(.secondary) a:hover {
+    background: #006d6d;
+    border-color: #005959;
+  } */
+  .button.secondary a:hover {
+    color: #ddd;
+  }
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+  }
+  .button {
+    order: 2;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
+  .menu li.button {
+    padding-right: 0;
+  }
+}
+@media (max-width: 800px) {
+  .ps5 .ps-text {
+    width: 100%;
+  }
+  .ps-bottom .video-5 {
+    width: 100%;
+    height: 100%;
+  }
+  .ps-bottom .ps-hub .hub-text {
+    width: 100%;
+  }
+  .ps-hub .hubs {
+    width: 100%;
+    height: 100%;
+  }
+  .ps-control .control-system {
+    display: block;
+  }
+  .control-system .con-text {
+    width: 100%;
+  }
+  .con-img .nov {
+    width: 100%;
+    height: 100%;
+  }
+  .ps-bottom .ps-car {
+    display: block;
+  }
+  .ps-car .sis {
+    width: 100%;
+    height: 100%;
+    margin-left: -100px;
+  }
+  .car-bottom .more {
+    display: none;
+  }
+  .car-bottom .all {
+    display: none;
+  }
+  .car-find {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .challeng {
+    display: block;
+  }
+  .challeng .chall {
+    width: 100%;
+    height: 100%;
+  }
+  .challeng-text {
+    width: 100%;
+  }
+  .cross {
+    display: block;
+  }
+  .cross .sosi {
+    width: 100%;
+    height: 100%;
+  }
+  .cross-text {
+    width: 100%;
+  }
+  .multi .multi-text {
+    width: 100%;
+  }
+  .game-grid {
+    display: block;
+  }
+  .game-grid .game-return .ret {
+    width: 100%;
+    height: 100%;
+  }
+  .game-return .ret-text {
+    width: 100%;
+  }
+  .game-sack .ret {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .remote .rem-text {
+    width: 100%;
+  }
+  .ote {
+    width: 100%;
+    height: 100%;
+  }
+  .ps-control .external {
+    display: block;
+    margin-left: -10px;
+  }
+  .external .exter-text {
+    width: 100%;
+  }
+  .drive {
+    width: 100%;
+    height: 100%;
+  }
+  .ps-control .footer {
+    display: block;
+  }
+  .footer .footer-text {
+    margin-bottom: 77px;
+  }
+  .footer .footer-social {
+    display: block;
+    width: 60%;
+    padding: 10px;
+  }
+}

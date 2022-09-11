@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+/* #myBtn {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  z-index: 99;
+  height: 50px;
+  border-radius: 50%;
+  background: #2d64e6;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: rgb(36, 167, 169);
+}
+#myBtn:active {
+  background: #111;
+  color: #fff;
+} */
+.btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  border-radius: 50%;
+  background: #7300ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btnScrollToTop:active {
+  background: #111;
+  color: #fff;
+}
+.btnScrollToTop:hover {
+  color: #111;
+  background: #fff;
+  transition: all ease-in 0.4s;
+}
+.header nav {
+  background-image: url("/photo/photo-1607853202273-797f1c22a38e.jfif");
+  background-position: center;
+  background-size: cover;
+  padding: 5px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  transition: all 300ms ease-in-out;
+}
+/* .header .logo-bad {
+  display: flex;
+  font-size: 24px;
+  float: left;
+  justify-content: center;
+}  */
+/* 
+.header nav {
+  background: #222;
+  padding: 5px 30px;
+} */
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease-in;
+}
+a:hover {
+  color: rgb(8, 37, 72);
+  transition: all 0.4s ease-in;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+.logo a,
+.toggle a {
+  font-size: 20px;
+}
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor: pointer;
+}
+.bars {
+  background: rgb(0, 0, 0);
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+.bars:before,
+.bars:after {
+  background: rgb(0, 0, 0);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+  top: -5px;
+}
+.scroll-down .header {
+  transform: translate3d(0, -100%, 0);
+}
+.scroll-up .header {
+  border-bottom: 5px solid black;
+}
+.access {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+.access video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+.access .access-top {
+  position: relative;
+  padding-top: 4em;
+  text-align: center;
+  color: #fff;
+}
+.access .blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(180, 122, 233, 0.299);
+}
+.access-top h2 {
+  font-size: 2.5em;
+  font-weight: 200;
+}
+.access-top p {
+  font-size: 1.1em;
+}
+.dual {
+  position: relative;
+  text-align: center;
+  padding: 4em;
+}
+.dual-text h2 {
+  font-size: 2.5em;
+  font-weight: 100;
+  padding-bottom: 60px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.dual .dual-text p {
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 30px;
+}
+.wifi .wire {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 19px;
+  background: #2d64e6;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  margin: 20px 0px 20px 0px;
+}
+.discover {
+  position: relative;
+  font-size: 16px;
+}
+.dual .game-console {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 4.3em;
+  margin-top: 20px;
+}
+.station {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: 2px 0px 2px 2px rgb(189, 189, 189);
+  border-radius: 10px;
+}
+/* .dual .cover {
+  position: relative;
+  margin-top: 20px;
+  font-size: 1px;
+  box-shadow: 0px 3px 6px black;
+} */
+.game-console .console-text {
+  position: relative;
+  width: 50%;
+}
+.console-text h2 {
+  font-size: 2.5em;
+  font-weight: 200;
+}
+.console-text p {
+  font-size: 1.1em;
+}
+.console-text .con {
+  position: relative;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 19px;
+  background: #2d64e6;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  margin: 20px 0px 20px 0px;
+}
+.dual .game-pulse {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.game-pulse .pulse-3d h2 {
+  position: relative;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+.game-pulse .pulse-text {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.pulse-text .con {
+  position: relative;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 19px;
+  background: #2d64e6;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.dual .game-remote {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 4em;
+}
+.remote-text {
+  position: relative;
+  width: 40%;
+}
+.remote-text h2 {
+  font-size: 2.5em;
+  font-weight: 100;
+}
+.remote-text p {
+  font-size: 1.1em;
+}
+.remote-text .con {
+  position: relative;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 19px;
+  background: #2d64e6;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: 2px 0px 2px 2px rgb(189, 189, 189);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.direct h2 {
+  padding-top: 2em;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+.dual .game-free {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 1em;
+}
+
+.game-free .free-text {
+  width: 40%;
+  padding: 2em;
+  color: #0f3a4c;
+}
+.free-text .includ {
+  position: relative;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 19px;
+  background: #0f3a4c;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+}
+.free-text .offer {
+  font-size: 13px;
+  color: rgb(167, 167, 167);
+}
+.footer-bottom .footer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(18, 12, 37);
+  color: #fff;
+  z-index: 2;
+}
+.footer .footer-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-sony {
+  position: relative;
+  width: 160px;
+  height: 70px;
+  background: url("/photo/sie.svg");
+  background-repeat: no-repeat;
+  background-size: 160px;
+  background-position: center;
+  cursor: pointer;
+}
+.footer-text h2 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+.footer-text p {
+  font-size: 1.2em;
+  line-height: 2em;
+  max-width: 700px;
+}
+.footer-social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.449);
+}
+.footer-social li {
+  list-style: none;
+}
+.footer-social li a {
+  display: inline-block;
+  filter: invert(1);
+  margin-right: 20px;
+  font-size: 1.3em;
+  transition: all ease 0.4s;
+}
+.footer-social li a:hover {
+  color: #7300ff;
+}
+@media all and (min-width: 468px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    order: 2;
+  }
+  .button.secondary {
+    border: 0;
+  }
+  .button a {
+    padding: 7.5px 15px;
+    background: teal;
+    border: none;
+    border-radius: 50em;
+    transition: all 0.4s ease-in;
+  }
+  .button.secondary a {
+    background: transparent;
+    background-color: #7300ff;
+    border: none;
+  }
+  .button a:hover {
+    text-decoration: none;
+    color: #111;
+    transition: all 0.4s ease-in;
+    background: transparent;
+  }
+  /* .button:not(.secondary) a:hover {
+    background: #006d6d;
+    border-color: #005959;
+  } */
+  .button.secondary a:hover {
+    color: #ddd;
+  }
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+  }
+  .button {
+    order: 2;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
+  .menu li.button {
+    padding-right: 0;
+  }
+}
+@media (max-width: 800px) {
+  .wifi .sens {
+    width: 100%;
+    height: 100%;
+  }
+  .dual .game-console {
+    display: block;
+  }
+  .game-console .console-text {
+    width: 100%;
+  }
+  .console-text h2 {
+    font-size: 1.9em;
+  }
+  .two {
+    width: 100%;
+    height: 100%;
+  }
+  .dual .game-remote {
+    display: block;
+  }
+  .game-remote .remote-text {
+    width: 100%;
+  }
+  .remote-text h2 {
+    font-size: 1.9em;
+  }
+  .mote {
+    width: 100%;
+    height: 100%;
+  }
+  .dual .direct h2 {
+    font-size: 1.9em;
+  }
+  .dual .game-free {
+    display: block;
+  }
+  .pulse-3d .degj {
+    width: 100%;
+    height: 100%;
+  }
+  .game-free .free-text {
+    width: 100%;
+  }
+  .order {
+    width: 100%;
+    height: 100%;
+  }
+  .footer {
+    display: block;
+  }
+  .footer .footer-text {
+    margin-bottom: 77px;
+  }
+  .footer .footer-social {
+    display: block;
+    width: 60%;
+    padding: 10px;
+  }
+}
